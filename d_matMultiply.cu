@@ -122,11 +122,10 @@ void d_matMultiplyTiledKernel(float * d_matrixM, float * d_matrixN,
     This kernel performs matrix multiplication of matrixM and matrixN
     (d_matrixM X d_matrixN) and stores the result in d_result.
     All three matrices are of size width by width and have been linearized.
-    Each thread calculates one output element.  Each thread in
-    a block cooperates in loading a tile of matrixN and matrixM elements into 
-    shared memory and then performs the dot-product calculation using
-    the values in the shared memory.  Every thread in the thread
-    block computes 2 results using the values in the shared
+    Each thread in a block cooperates in loading a tile of matrixN and 
+    matrixM elements into shared memory and then performs the dot-product 
+    calculation using the values in the shared memory.  Every thread in 
+    the thread block computes 2 results using the values in the shared
     memory.  At the end, all threads in a block have calculated the results
     for TILE_SIZE by TILE_SIZE output elements.
     This implementation is described on page 128 in the textbook.
