@@ -1,0 +1,22 @@
+1) Show some output where the CPU version is the best.
+
+2) How can it be possible that the CPU version is better than any
+of the GPU versions?
+
+3) Explain why the SIMPLE version always (or almost always)
+performs worse than either of the tiled versions.
+
+4) Show some output where the TILED2 version performs
+better than the TILED version.
+
+5) Explain why the TILED2 version may perform better
+than the TILED version.
+
+6) Show some output where the TILED version performs
+better than the TILED2 version.
+
+7) Explain why the TILED version may perform better than
+the TILED2 version.
+
+
+
